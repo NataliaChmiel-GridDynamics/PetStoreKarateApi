@@ -6,7 +6,7 @@ class petsRunner {
     
     @Karate.Test
     Karate testPets() {
-        return Karate.run("findPetsByStatusAvailable", "findPetsByStatusPending", "findPetsByStatusSold", "findPetById", "storeInventory", "findPurchaseById", "getUser", "logIn").relativeTo(getClass());
+        return Karate.run("findPetsByStatusAvailable", "findPetsByStatusPending", "findPetsByStatusSold", "findPetById", "storeInventory", "findPurchaseById", "getUser", "logIn", "logOut").relativeTo(getClass());
     }    
 
 }

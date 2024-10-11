@@ -1,11 +1,10 @@
-Feature: Finds purchase by ID
+Feature: Logout process
 
   Background:
     Given url 'https://petstore.swagger.io/v2'
 
-  Scenario: get purchase by ID
-    * def orderId = 10
-    Given path 'store/order', orderId
+  Scenario: logout user
+    Given path 'user/logout'
     When method GET
     Then status 200
     And print 'Response:', response
