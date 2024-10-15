@@ -6,7 +6,7 @@ class deleteRunner {
 
     @Karate.Test
     Karate testPets() {
-        return Karate.run("").relativeTo(getClass());
+        return Karate.run("deletePet", "deletePurchase", "deleteUser").relativeTo(getClass());
     }
 
 }
